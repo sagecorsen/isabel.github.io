@@ -27,9 +27,11 @@ h2 {
 }
 
 li {
-    list-style: inside'» ';
+    list-style: none;
     color: rgb(255, 255, 255);
     transition: all 0.4s;
+    float: left;
+    background-color: rgb(58, 58, 58);
 }
 
 a:hover {
@@ -41,8 +43,37 @@ li:hover {
     color: #43b4ff;
 }
 
-a {
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+}
+
+li a:hover {
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
     transition: all 0.4s;
+}
+
+li a:active {
+    background-color: #81abc9;
+    font-size: 120%;
+}
+
+li:last-child {
+    float: right;
+    background-color: rgba(25, 175, 175, 0.69);
+    color: white;
 }
