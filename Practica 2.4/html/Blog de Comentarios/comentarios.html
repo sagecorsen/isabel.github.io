@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de comentarios del Blog de la Guía Turística.">
+    <meta name="keywords" content="comentarios, blog, guía turística, opiniones">
+    <title>Comentarios - Blog Guía Turística</title>
+    <link rel="stylesheet" href="../../css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Comentarios del Blog</h1>
+    </header>
+    <nav>
+        <a href="../Guia Turistica/inicio.html">Inicio</a>
+        <a href="../Guia Turistica/lugares.html">Lugares de Inter&eacute;s</a>
+        <a href="../Guia Turistica/mapa.html">Mapa</a>
+        <a href="../Guia Turistica/contacto.html">Contacto</a>
+        <a href="../Blog de Comentarios/blog.html"><b>Blog</b></a>
+    </nav>
+    <main>
+        <section>
+            <h2>Deja tu Comentario</h2>
+            <form action="procesar_comentario.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" rows="5" required></textarea>
+
+                <button type="submit">Enviar Comentario</button>
+            </form>
+        </section>
+        <section>
+            <h2>Comentarios Recientes</h2>
+            <div class="comentario">
+                <p><strong>RM Team</strong> <em>01/03/2025</em></p>
+                <p>Excelente gu&iacute;a, muy preparados y excelente organizaci&oacute;n para grandes grupos.</p>
+            </div>
+            <div class="comentario">
+                <p><strong>Stephanie Soo</strong> <em>28/02/2025</em></p>
+                <p>Muy buen contenido, la información es muy útil para planificar mi próxima
+                    visita a la ciudad.</p>
+            </div>
+            <!-- Se pueden agregar más comentarios aquí -->
+        </section>
+    </main>
+    <aside>
+        <h3>M&aacute;s Informaci&oacute;n:</h3>
+        <p>Para m&aacute;s informaci&oacute;n sobre la tours, visita nuestra p&aacute;gina de <a
+                href="../Guia Turistica/contacto.html">contacto</a> o
+            <a href="../Guia Turistica/contacto.html#boletin">suscr&iacute;bete</a> al boletín.
+        </p>
+    </aside>
+    <footer>
+        <p>&copy; 2025 Turismo CDMX. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
